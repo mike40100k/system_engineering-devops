@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Infinite loop that handles SIGTERM by printing a message instead of exiting
+# Script that loops infinitely and handles SIGTERM gracefully
 
-trap "echo 'I am invincible!!!'" SIGTERM
+trap 'echo "I am invincible!!!"' SIGTERM
 
 while true
 do
